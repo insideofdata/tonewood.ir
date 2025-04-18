@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="55" fill="#5d4037" />
+  
+  <!-- Inner circle -->
+  <circle cx="60" cy="60" r="50" fill="#8d6e63" />
+  
+  <!-- Stylized tree rings representing tonewood grain -->
+  <circle cx="60" cy="60" r="40" fill="none" stroke="#e0c9a6" stroke-width="2" />
+  <circle cx="60" cy="60" r="30" fill="none" stroke="#e0c9a6" stroke-width="2" />
+  <circle cx="60" cy="60" r="20" fill="none" stroke="#e0c9a6" stroke-width="2" />
+  <circle cx="60" cy="60" r="10" fill="none" stroke="#e0c9a6" stroke-width="2" />
+  
+  <!-- Stylized violin/guitar silhouette -->
+  <path d="M60 25 Q70 40 70 60 Q70 80 60 95 Q50 80 50 60 Q50 40 60 25" fill="none" stroke="#d7cca1" stroke-width="3" />
+  
+  <!-- Text -->
+  <text x="60" y="110" font-family="Arial" font-size="10" fill="#f5f1e8" text-anchor="middle">IRAN TONEWOOD</text>
+</svg>

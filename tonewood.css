@@ -1,0 +1,202 @@
+:root {
+  --dark-brown: #5D4037;
+  --medium-brown: #8D6E63;
+  --light-brown: #BCAAA4;
+  --cream: #F5F1E8;
+  --dark-green: #2E7D32;
+  --medium-green: #4CAF50;
+  --light-green: #81C784;
+  --accent-green: #C8E6C9;
+}
+
+/* Tonewood specific styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: var(--cream); /* Warm background to complement wood theme */
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background: var(--dark-brown); /* Wood brown color */
+  color: var(--light-brown); /* Light wood color */
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-container img {
+  max-width: 120px;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 2.5em;
+  color: var(--cream);
+}
+
+.header-content h2 {
+  font-size: 1.3em;
+  color: var(--light-brown);
+}
+
+/* Navigation styles */
+nav {
+  background: var(--medium-green); /* Green navigation bar */
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: var(--cream);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--dark-brown);
+  text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about, .services, .contact {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-left: 5px solid var(--medium-green);
+}
+
+/* Section headings */
+section h3 {
+  color: var(--dark-brown);
+  border-bottom: 2px solid var(--medium-green);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+section h4 {
+  color: var(--medium-brown);
+  margin: 15px 0;
+}
+
+/* Tonewood features list */
+.tonewood-features {
+  margin-top: 20px;
+}
+
+.tonewood-features ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.tonewood-features li {
+  position: relative;
+  padding: 10px 0;
+  padding-left: 25px;
+  border-bottom: 1px solid var(--accent-green);
+}
+
+.tonewood-features li:last-child {
+  border-bottom: none;
+}
+
+.tonewood-features li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--medium-green);
+  border-radius: 50%;
+}
+
+.intro-text {
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+/* Footer styles */
+footer {
+  background: var(--dark-brown);
+  color: var(--cream);
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Links styling */
+a {
+  color: var(--dark-green);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--medium-green);
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+  
+  .logo-container {
+    margin-bottom: 15px;
+  }
+  
+  .header-content h1 {
+    font-size: 2em;
+  }
+  
+  .header-content h2 {
+    font-size: 1.1em;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 10px 0;
+  }
+}
