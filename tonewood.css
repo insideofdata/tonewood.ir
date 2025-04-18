@@ -93,7 +93,8 @@ main {
   margin: 0 auto;
 }
 
-.about, .services, .contact {
+/* Section Styles */
+.about, .process, .quality, .moonwood, .services, .woods, .instruments, .gallery, .contact {
   background: #fff;
   padding: 30px;
   border-radius: 8px;
@@ -115,7 +116,19 @@ section h4 {
   margin: 15px 0;
 }
 
-/* Tonewood features list */
+/* Section content */
+section p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+section .intro-text {
+  margin-bottom: 30px;
+}
+
+/* Remove the old .about, .services, .contact specific styles if they exist */
+
+/* Tonewood Features */
 .tonewood-features {
   margin-top: 20px;
 }
@@ -127,20 +140,15 @@ section h4 {
 
 .tonewood-features li {
   position: relative;
-  padding: 10px 0;
+  padding: 8px 0;
   padding-left: 25px;
-  border-bottom: 1px solid var(--accent-green);
-}
-
-.tonewood-features li:last-child {
-  border-bottom: none;
 }
 
 .tonewood-features li:before {
   content: "";
   position: absolute;
   left: 0;
-  top: 16px;
+  top: 14px;
   width: 10px;
   height: 10px;
   background-color: var(--medium-green);
@@ -199,4 +207,50 @@ a:hover {
   nav li {
     margin: 10px 0;
   }
+}
+
+/* Gallery Styles */
+/* Enhanced Gallery Styles */
+.gallery {
+  margin: 40px 0;
+  padding: 20px;
+  background: var(--cream);
+  border-radius: 8px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.image-item {
+  background: white;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.image-item p {
+  margin-top: 12px;
+  font-style: italic;
+  color: var(--dark-brown);
+  font-size: 0.95em;
 }
